@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background: linear-gradient(to bottom, #ffcc00, #ff6600);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+
+    position: relative;
+  }
+
+  /* styles.css */
+#heart-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 5%;
+  pointer-events: none;
+}
+
+.heart-image {
+  position: absolute;
+  width: 10px;
+  height: auto;
+  pointer-events: none;
+  animation: fallHeart 3s linear infinite;
+}
+
+/* styles.css */
+@keyframes fallHeart {
+  0% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0.5; /* Fading in */
+  }
+  100% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1; /* Fading out */
+  }
+}
+
+
+
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
